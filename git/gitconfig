@@ -1,0 +1,16 @@
+[user]
+        name = Josh Rost
+        email = joshua.s.rost@gmail.com
+
+[push]
+	default = simple
+
+[github]
+        user = joshrost
+
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+        ablame = shortlog -s -n
