@@ -11,9 +11,9 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#1e2127"
+    background_color = "#282c34"
     background_image = None
-    cursor_color = "#676c76"
+    cursor_color = "#528bff"
     custom_command = /bin/zsh
     foreground_color = "#878e9b"
     palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"

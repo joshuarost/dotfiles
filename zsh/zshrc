@@ -94,3 +94,4 @@ export EDITOR='vim'
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+alias :wq="figlet 'it is not vim, retard'"
