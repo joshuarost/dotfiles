@@ -1,4 +1,5 @@
 [global_config]
+  hide_on_lose_focus = True
 [keybindings]
 [layouts]
   [[default]]
@@ -13,10 +14,10 @@
   [[default]]
     background_color = "#282c34"
     background_image = None
-    cursor_color = "#528bff"
+    cursor_color = "#ABB2BF"
     custom_command = /bin/zsh
-    foreground_color = "#878e9b"
-    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
+    foreground_color = "#abb2bf"
+    palette = "#282c34:#e06c75:#98c379:#e5c07b:#61afef:#c678dd:#56b6c2:#abb2bf:#3e4452:#be5046:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#5c6370"
     scroll_on_output = False
     scrollback_infinite = True
     scrollbar_position = hidden
