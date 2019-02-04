@@ -1,5 +1,4 @@
 [global_config]
-  hide_on_lose_focus = True
 [keybindings]
 [layouts]
   [[default]]
