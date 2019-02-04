@@ -226,10 +226,7 @@ hide_edge_borders none
 exec "setxkbmap -layout ch,us -option 'grp:shifts_toggle'"
 
 # set mouse follow focus of
-#focus_follows_mouse no
-
-# set key speed
-#xset r rate 200 20 i&
+focus_follows_mouse off
 
 # set bar
 bar {
