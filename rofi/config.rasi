@@ -1,0 +1,134 @@
+/**
+ * User: joshrost
+ * Copyright: joshrost
+ */
+
+configuration {
+    display-drun:       "Activate";
+    sidebar-mode:       false;
+}
+
+* {
+    pink:               #C678DD;
+    urgent:             #E06C75;
+    light:              #ABB2BF;
+    dark:               #282C34;
+    dark-select:        #3E4452;
+    darkgray:           #848484;
+    font:               "Hack Regular 11";
+
+    background-color:   @dark;
+    hide-scrollbar:     "true";
+}
+
+window {
+    anchor:             north;
+    location:           north;
+    y-offset:           30%;
+    children:           [mainbox];
+}
+
+mainbox {
+    spacing:            0px;
+    children: [inputbar, message, listview, sidebar];
+    border:             6px solid;
+    border-color:	@dark;
+}
+
+message {
+    padding:            6px 10px;
+}
+
+textbox {
+    text-color:         @darkgray;
+}
+
+listview {
+    fixed-height:       false;
+    dynamic:            true;
+    spacing:            0px;
+    padding:            6px 0 0 0;
+    margin:             0px;
+}
+
+element {
+    padding:            4px 10px;
+    border:             0 0 0 5px solid;
+}
+
+element normal.normal {
+    padding:            0px 15px;
+    text-color:         @light;
+}
+
+element normal.urgent {
+    text-color:         @urgent;
+}
+
+element normal.active {
+    text-color:         @pink;
+}
+
+element selected.normal {
+    background-color:   @pink;
+    text-color:         @dark;
+    border:             0 0 0 5px solid;
+    border-color:	@pink;
+}
+
+element selected.urgent {
+    background-color:   @urgent;
+    text-color:         @dark;
+}
+
+element selected.active {
+    background-color:   @pink;
+    text-color:         @dark;
+}
+
+element alternate.normal {
+    text-color:         @light;
+}
+
+element alternate.urgent {
+    text-color:         @urgent;
+}
+
+element alternate.active {
+    text-color:         @dark;
+    background-color:   @pink;
+}
+
+inputbar {
+    spacing:            0px;
+}
+
+prompt {
+    padding:            6px 9px;
+    background-color:   @pink;
+    text-color:         @dark;
+}
+
+entry {
+    padding:            6px 10px;
+    text-color:         @light;
+}
+
+case-indicator {
+    padding:            6px 10px;
+    text-color:         @pink;
+}
+
+/* Only if Sidebar activated -> configuration*/
+
+button {
+    text-color:         @darkgray;
+    padding:            6px 9px;
+    spacing:            0;
+    margin:             0;
+}
+
+button selected {
+    text-color:         @dark;
+    background-color:   @pink;
+}
