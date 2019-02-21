@@ -12,7 +12,7 @@ configuration {
     pink:               #C678DD;
     urgent:             #E06C75;
     light:              #ABB2BF;
-    dark:               #282C34;
+    dark:               #3E4452;
     dark-select:        #3E4452;
     darkgray:           #848484;
     font:               "Hack Regular 11";
