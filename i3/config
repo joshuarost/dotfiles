@@ -213,22 +213,17 @@ bindsym $mod+minus scratchpad show
 #client.urgent #CE4045 #CE4045 #FFFFFF #DCCD69
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-#new_window pixel 1
-#new_float pixel 1
+new_window pixel 1
+new_float pixel 1
 
 # Hide borders
 hide_edge_borders none
 
 #exec ~/.i3/autostart
-#exec_always --no-startup-id $HOME/.config/polybar/run.sh
+exec_always --no-startup-id $HOME/.config/polybar/run.sh
 
 # change keyboard layout on shift
 exec "setxkbmap -layout ch,us -option 'grp:shifts_toggle'"
 
 # set mouse follow focus of
 focus_follows_mouse off
-
-# set bar
-bar {
-    status_command i3status
-}
