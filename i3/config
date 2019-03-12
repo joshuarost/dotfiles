@@ -206,11 +206,11 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
-# Colors
-#client.focused #4F99D3 #4F99D3 #151718 #9FCA56
-#client.focused_inactive #9FCA56 #9FCA56 #151718 #A074C4
-#client.unfocused #1f2326 #1f2326 #AAAAAA #A074C4
-#client.urgent #CE4045 #CE4045 #FFFFFF #DCCD69
+# Colors                    border  Backgr. text    indictr.
+client.focused              #61afef #61afef #1e1e1e #61afef
+client.focused_inactive     #1e1e1e #1e1e1e #61afef #1e1e1e
+client.unfocused            #1e1e1e #1e1e1e #707880 #1e1e1e
+client.urgent               #CE4045 #CE4045 #FFFFFF #DCCD69
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
@@ -227,3 +227,7 @@ exec "setxkbmap -layout ch,us -option 'grp:shifts_toggle'"
 
 # set mouse follow focus of
 focus_follows_mouse off
+
+# configure i3-gaps
+gaps inner 5
+#gaps outer 5
