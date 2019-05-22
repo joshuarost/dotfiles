@@ -50,7 +50,7 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -s ~/dotfiles/zsh/zsh_aliases ~/.zsh_aliases
-ln -s ~/dotfiles/terminator/config ~/.config/terminator
+ln -s ~/dotfiles/terminator ~/.config/terminator
 ```
 
 ## vim
