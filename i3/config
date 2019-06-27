@@ -207,9 +207,9 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # Colors                    border  Backgr. text    indictr.
-client.focused              #61afef #61afef #1e1e1e #61afef
-client.focused_inactive     #1e1e1e #1e1e1e #61afef #1e1e1e
-client.unfocused            #1e1e1e #1e1e1e #707880 #1e1e1e
+client.focused              #ffffff #ffffff #212121 #ffffff
+client.focused_inactive     #212121 #212121 #ffffff #212121
+client.unfocused            #212121 #212121 #fffff #212121
 client.urgent               #CE4045 #CE4045 #FFFFFF #DCCD69
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
