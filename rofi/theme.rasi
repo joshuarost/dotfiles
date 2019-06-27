@@ -1,74 +1,61 @@
 /*
  * User: joshrost
  * Copyright: joshrost
+ *
+ * vim:ft=css
  */
 
 configuration {
-	display-drun:    "Activate";
-	display-run:     "Execute";
-	display-window:  "Window";
-	sidebar-mode:    true;
+	display-drun:       "  drun: ";
+	display-run:        "  run: ";
+	display-window:     "  window: ";
+        /*sidebar-mode:       true;*/
+        /*show-icons:      true;*/
+        /*drun-icon-theme:    "Papirus";*/
 }
 
 * {
-	background-color:            #1e1e1e;
-	text-color:                  #d3d7cf;
-	selbg:                       #61afef;
-	actbg:                       #262626;
-	urgbg:                       #e53935;
-	winbg:			     #a0d4ff;
+        background-color:           #212121;
+	text-color:                 #ffffff;
+	accent:                     #e05c75;
+	actbg:                      #262626;
+	urgent:                      #e53935;
 
-	selected-normal-foreground:  @winbg;
-	normal-foreground:           @text-color;
-	selected-normal-background:  @actbg;
-	normal-background:           @background-color;
-
-	selected-urgent-foreground:  @background-color;
-	urgent-foreground:           @text-color;
-	selected-urgent-background:  @urgbg;
-	urgent-background:           @background-color;
-
-	selected-active-foreground:  @winbg;
-	active-foreground:           @text-color;
-	selected-active-background:  @actbg;
-	active-background:           @selbg;
+	selected-accent:  @actbg;
 
 	line-margin:                 2;
 	line-padding:                2;
 	separator-style:             "none";
 	hide-scrollbar:              "true";
-	margin:                      0;
-	padding:                     0;
+        margin:                      0;
+        padding:                     0;
         font:                       "Hack Regular 10";
 }
 
 window {
-	location:	 west;
-	anchor:		 west;
-	height:		 100%;
-	width:		 18%;
-	orientation: horizontal;
-	children:	 [mainbox];
+        background-color:   @background-color;
+        transparency:       "screenshot";
+        location:           center;
+	anchor:		    center;
+	width:		    20%;
+        border-radius:      20px;
+        children:        [mainbox];
 }
 
 mainbox {
-	spacing:  0.8em;
-	children: [ entry,listview,sidebar ];
+        /*spacing:  0em;*/
+	children: [inputbar,listview,sidebar ];
 }
 
 button {
     padding: 6px 2px;
+
 }
 
 button selected {
-	background-color: @active-background;
-	text-color:       @background-color;
+	text-color: @accent;
 }
 
-inputbar {
-	padding: 5px;
-	spacing: 5px;
-}
 
 listview {
 	spacing: 0.5em;
@@ -78,56 +65,61 @@ listview {
 
 element { padding: 10px; }
 
-entry {
-	expand:         false;
-	text-color:     @normal-foreground;
-	vertical-align: 1;
-	padding:        5px;
+prompt {
+    background-color: @background-color;
 }
 
+inputbar {
+	padding:        15px;
+}
+
+entry {
+	text-color:     @text-color;
+        vertical-align: 1;
+}
+
+/* Coloring*/
 element normal.normal {
-	background-color: @normal-background;
-	text-color:       @normal-foreground;
+	background-color: @background-color;
+	text-color:       @text-color;
 }
 
 element normal.urgent {
-	background-color: @urgent-background;
-	text-color:       @urgent-foreground;
+	background-color: @background-color;
+	text-color:       @text-color;
 }
 
 element normal.active {
-	background-color: @active-background;
-	text-color:       @active-foreground;
+	background-color: @accent;
+	text-color:       @text-color;
 }
 
 element selected.normal {
-	background-color: @selected-normal-background;
-	text-color:       @selected-normal-foreground;
-	border:           0 5px solid 0 0;
-	border-color:	    @active-background;
+	background-color: @accent;
+	text-color:       @background-color;
 }
 
 element selected.urgent {
-	background-color: @selected-urgent-background;
-	text-color:       @selected-urgent-foreground;
+	background-color: @urgent;
+	text-color:       @background-color;
 }
 
 element selected.active {
-	background-color: @selected-active-background;
-	text-color:       @selected-active-foreground;
+	background-color: @selected-accent;
+	text-color:       @accent;
 }
 
 element alternate.normal {
-	background-color: @normal-background;
-	text-color:       @normal-foreground;
+	background-color: @background-color;
+	text-color:       @text-color;
 }
 
 element alternate.urgent {
-	background-color: @urgent-background;
-	text-color:       @urgent-foreground;
+	background-color: @background-color;
+	text-color:       @text-color;
 }
 
 element alternate.active {
-	background-color: @active-background;
-	text-color:       @active-foreground;
+	background-color: @accent;
+	text-color:       @text-color;
 }
