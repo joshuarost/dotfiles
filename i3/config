@@ -18,7 +18,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Support switching of windows using alt-tab
 bindsym $mod+Tab exec rofi -lines 20 -show window
@@ -171,7 +171,7 @@ bindsym $mod+F3 exec --no-startup-id "~/.config/i3/monitor.d/three"
 #exec_always --no-startup-id feh --randomize --bg-fill ~/.config/backgrounds/*
 
 # fixed background
-exec_always --no-startup-id feh --bg-fill ~/.config/backgrounds/husqvarna.png
+exec_always --no-startup-id feh --bg-fill ~/.config/backgrounds/neoncity.png
 
 # bind multimedia function keys
 # bind volume control function keys
@@ -213,8 +213,8 @@ client.unfocused            #212121 #212121 #fffff #212121
 client.urgent               #CE4045 #CE4045 #FFFFFF #DCCD69
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 1
-new_float pixel 1
+new_window pixel 0
+new_float pixel 0
 
 # Hide borders
 hide_edge_borders none
@@ -230,5 +230,6 @@ focus_follows_mouse off
 
 # Gaps stuff
 
-#gaps inner 7
-#gaps outer 0
+gaps inner 5
+gaps outer 0
+border_radius 5

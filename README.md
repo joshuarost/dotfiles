@@ -1,17 +1,36 @@
 # dotfiles
 All my personal dotfiles stored in one place
 
-First of all clone
+### First of all clone
 ```zsh
-git clone https://github.com/joshrost/dotfiles.git
+git clone https://github.com/joshrost/dotfiles.git ~/dotfiles
 ```
 
-## i3
+## i3-gaps
+[special fork](https://github.com/resloved/i3) from the popular [i3-gaps](https://github.com/Airblader/i3)
 #### installation
 
 ```zsh
 sudo apt install i3 scrot feh
 ```
+#### building
+```zsh
+# clone the repository
+git clone https://github.com/resloved/i3 ~/i3-gaps
+cd i3-gaps
+
+# compile & install
+autoreconf --force --install
+rm -rf build/
+mkdir -p build && cd build/
+
+# Disabling sanitizers is important for release versions!
+# The prefix and sysconfdir are, obviously, dependent on the distribution.
+../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+make -j8
+sudo make install
+```
+
 #### link config
 ```zsh
 ln -s ~/dotfiles/i3 ~/.config/i3
