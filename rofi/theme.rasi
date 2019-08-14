@@ -17,9 +17,9 @@ configuration {
 * {
         background-color:           #212121;
 	text-color:                 #ffffff;
-	accent:                     #e05c75;
+	accent:                     #56b6c2;
 	actbg:                      #262626;
-	urgent:                      #e53935;
+	urgent:                     #e06c75;
 
 	selected-accent:  @actbg;
 

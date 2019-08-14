@@ -171,7 +171,7 @@ bindsym $mod+F3 exec --no-startup-id "~/.config/i3/monitor.d/three"
 #exec_always --no-startup-id feh --randomize --bg-fill ~/.config/backgrounds/*
 
 # fixed background
-exec_always --no-startup-id feh --bg-fill ~/.config/backgrounds/neoncity.png
+exec_always --no-startup-id feh --bg-fill ~/.config/backgrounds/blurycity.png
 
 # bind multimedia function keys
 # bind volume control function keys
@@ -207,17 +207,17 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # Colors                    border  Backgr. text    indictr.
-client.focused              #ffffff #ffffff #212121 #ffffff
-client.focused_inactive     #212121 #212121 #ffffff #212121
-client.unfocused            #212121 #212121 #fffff #212121
-client.urgent               #CE4045 #CE4045 #FFFFFF #DCCD69
+client.focused              #56b6c2 #56b6c2 #282c34 #56b6c2
+client.focused_inactive     #282c34 #282c34 #56b6c2 #282c34
+client.unfocused            #282c34 #282c34 #56b6c2 #282c34
+client.urgent               #e06c75 #e06c75 #282c34 #e06c75
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 0
-new_float pixel 0
+#new_window pixel 7
+#new_float pixel 7
 
 # Hide borders
-hide_edge_borders none
+#hide_edge_borders none
 
 #exec ~/.i3/autostart
 exec_always --no-startup-id $HOME/.config/polybar/run.sh
@@ -229,7 +229,5 @@ exec "setxkbmap -layout ch,us -option 'grp:shifts_toggle'"
 focus_follows_mouse off
 
 # Gaps stuff
-
-gaps inner 5
+gaps inner 7
 gaps outer 0
-border_radius 5
