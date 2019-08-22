@@ -9,7 +9,7 @@ configuration {
 	display-drun:       "  drun: ";
 	display-run:        "  run: ";
 	display-window:     "  window: ";
-        /*sidebar-mode:       true;*/
+        sidebar-mode:       true;
         /*show-icons:      true;*/
         /*drun-icon-theme:    "Papirus";*/
 }
@@ -48,12 +48,13 @@ mainbox {
 }
 
 button {
-    padding: 6px 2px;
+    padding: 10px;
 
 }
 
 button selected {
-	text-color: @accent;
+	text-color: @background-color;
+        background-color: @accent;
 }
 
 
