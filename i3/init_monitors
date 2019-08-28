@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Turn all off
+xrandr --output DP-1 --auto
+xrandr --output eDP-1 --off
+xrandr --output DP-2-1 --off
+xrandr --output DP-2-2 --off
+
+sleep 1
+
+# Turn on with correct order
+xrandr --output DP-2-2 --auto --right-of DP-1
+xrandr --output DP-2-1 --auto --right-of DP-2-2
+
+exec "~/.config/polybar/run.sh &> /dev/null"
