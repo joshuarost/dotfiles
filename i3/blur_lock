@@ -1,0 +1,9 @@
+#!/bin/sh
+
+pngfile="/tmp/.screenshot.png"
+bluredfile="/tmp/.screenshotblur.bmp"
+
+scrot -z $pngfile
+convert $pngfile -blur 0x5 $bluredfile
+i3lock -i $bluredfile
+rm $pngfile $bluredfile
