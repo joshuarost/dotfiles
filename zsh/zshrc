@@ -45,7 +45,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=243"
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 
-SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_SHOW=false
 SPACESHIP_TIME_COLOR=167
 
 SPACESHIP_DIR_TRUNC=0
@@ -90,8 +90,3 @@ export EDITOR='vim'
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias :wq="figlet 'it is not vim, retard'"

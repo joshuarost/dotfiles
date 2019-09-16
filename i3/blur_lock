@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pngfile="/tmp/.screenshot.png"
-bluredfile="/tmp/.screenshotblur.bmp"
+bluredfile="/tmp/.screenshotblur.png"
 
 scrot -z $pngfile
 convert $pngfile -blur 0x5 $bluredfile

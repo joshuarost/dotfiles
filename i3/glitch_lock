@@ -25,5 +25,5 @@ convert -gravity center $glitchedfile $pngfile
 
 # -u disables circle indicator when entering characters
 # -e doesn't try to authenticate when no character is entered
-i3lock -e -i $pngfile
+i3lock -e -u -i $pngfile
 rm $pngfile $bmpfile $glitchedfile
