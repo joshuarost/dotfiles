@@ -37,6 +37,11 @@ ln -s ~/dotfiles/i3 ~/.config/i3
 ln -s ~/dotfiles/backgrounds ~/.config/backgrounds
 ```
 
+## Firefox
+``` zsh
+ln -rs ~/dotfiles/firefox/chrome ~/.mozilla/firefox/x7oa1l6j.default-release
+```
+
 ## Polybar
 #### dependencies
 ```zsh
