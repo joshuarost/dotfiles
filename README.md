@@ -6,40 +6,17 @@ All my personal dotfiles stored in one place
 git clone https://github.com/joshrost/dotfiles.git ~/dotfiles
 ```
 
-## i3-gaps
-[special fork](https://github.com/resloved/i3) from the popular [i3-gaps](https://github.com/Airblader/i3)
+## i3
 #### installation
 
 ```zsh
 sudo apt install i3 scrot feh
 ```
-#### building
-```zsh
-# clone the repository
-git clone https://github.com/resloved/i3 ~/i3-gaps
-cd i3-gaps
-
-# compile & install
-autoreconf --force --install
-rm -rf build/
-mkdir -p build && cd build/
-
-# Disabling sanitizers is important for release versions!
-# The prefix and sysconfdir are, obviously, dependent on the distribution.
-../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
-make -j8
-sudo make install
-```
 
 #### link config
 ```zsh
-ln -s ~/dotfiles/i3 ~/.config/i3
-ln -s ~/dotfiles/backgrounds ~/.config/backgrounds
-```
-
-## Firefox
-``` zsh
-ln -rs ~/dotfiles/firefox/chrome ~/.mozilla/firefox/x7oa1l6j.default-release
+ln -rs ~/dotfiles/i3 ~/.config/i3
+ln -rs ~/dotfiles/backgrounds ~/.config/backgrounds
 ```
 
 ## Polybar
@@ -61,7 +38,7 @@ cd polybar.bin
 
 #### link
 ```zsh
-ln -s ~/dotfiles/polybar ~/.config/polybar
+ln -rs ~/dotfiles/polybar ~/.config/polybar
 ```
 
 ## rofi
@@ -72,7 +49,7 @@ sudo apt install rofi fonts-hack-ttf
 **Note:** [Rofi](https://github.com/DaveDavenport/rofi) >1.4.0 needed
 #### link config
 ```zsh
-ln -s ~/dotfiles/rofi ~/.config/rofi
+ln -rs ~/dotfiles/rofi ~/.config/rofi
 ```
 
 ## terminator with zsh
@@ -93,10 +70,10 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 ```
 #### link config
 ```zsh
-ln -s ~/dotfiles/git/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
-ln -s ~/dotfiles/zsh/zsh_aliases ~/.zsh_aliases
-ln -s ~/dotfiles/terminator ~/.config/terminator
+ln -rs ~/dotfiles/git/gitconfig ~/.gitconfig
+ln -rs ~/dotfiles/zsh/zshrc ~/.zshrc
+ln -rs ~/dotfiles/zsh/zsh_aliases ~/.zsh_aliases
+ln -rs ~/dotfiles/terminator ~/.config/terminator
 ```
 
 ## vim
