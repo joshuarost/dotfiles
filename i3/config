@@ -77,16 +77,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # define which workspace should be on which monitor
-workspace 1 output DP-2-2
-workspace 2 output DP-2-2
-workspace 3 output DP-2-2
-workspace 4 output DP-2-2
+workspace 1 output DP-2-1
+workspace 2 output DP-2-1
+workspace 3 output DP-2-1
+workspace 4 output DP-2-1
 workspace 5 output DP-2-1
 workspace 6 output DP-2-1
 workspace 7 output DP-2-1
 workspace 8 output DP-2-1
-workspace 9 output DP-1
-workspace 10 output DP-1
+workspace 9 output DP-2-1
+workspace 10 output eDP-1
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -171,7 +171,7 @@ bindsym $mod+F3 exec --no-startup-id "~/.config/i3/monitor.d/three"
 #exec_always --no-startup-id feh --randomize --bg-fill ~/.config/backgrounds/*
 
 # fixed background
-exec_always --no-startup-id feh --bg-fill ~/.config/backgrounds/blurycity.png
+exec_always --no-startup-id feh --bg-fill ~/.config/backgrounds/husqvarna.png
 
 # bind multimedia function keys
 # bind volume control function keys
@@ -192,7 +192,7 @@ bindsym --release Print exec --no-startup-id "scrot -d -e 'mv $f ~/images &amp; 
 
 # bind for lockscreen
 bindsym $mod+z exec "~/.config/i3/glitch_lock"
-exec --no-startup-id xautolock -time 5 -locker "~/.config/i3/glitch_lock" &
+exec --no-startup-id xautolock -time 5 -locker "~/.config/i3/blur_lock" &
 
 # start network manager applet
 exec --no-startup-id nm-applet
@@ -210,9 +210,9 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # Colors                    border  Backgr. text    indictr.
-client.focused              #56b6c2 #56b6c2 #282c34 #56b6c2
-client.focused_inactive     #212121 #212121 #56b6c2 #212121
-client.unfocused            #212121 #212121 #56b6c2 #212121
+client.focused              #ffffff #ffffff #282c34 #ffffff
+client.focused_inactive     #212121 #212121 #ffffff #212121
+client.unfocused            #212121 #212121 #ffffff #212121
 client.urgent               #e06c75 #e06c75 #282c34 #e06c75
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
