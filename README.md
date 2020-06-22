@@ -74,6 +74,8 @@ ln -rs ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -rs ~/dotfiles/zsh/zshrc ~/.zshrc
 ln -rs ~/dotfiles/zsh/zsh_aliases ~/.zsh_aliases
 ln -rs ~/dotfiles/terminator ~/.config/terminator
+ln -rs ~/dotfiles/x11/.xinitrc ~/
+ln -rs ~/dotfiles/x11/.Xresources ~/
 ```
 
 ## vim
