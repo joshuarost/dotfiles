@@ -78,8 +78,8 @@ bindsym $mod+a focus parent
 
 # Monitor Variables
 set $screen1 DP-2-1
-set $screen2 DP-2-1
-set $screen3 eDP-1
+set $screen2 DP-2-2
+set $screen3 DP-1
 
 
 # define which workspace should be on which monitor
@@ -197,7 +197,7 @@ bindsym XF86LaunchA scratchpad show
 bindsym --release Print exec --no-startup-id "scrot -d -e 'mv $f ~/images &amp; viewnior ~/images/$f'"
 
 # bind for lockscreen
-bindsym $mod+z exec "~/.config/i3/glitch_lock"
+bindsym $mod+z exec "~/.config/i3/blur_lock"
 exec --no-startup-id xautolock -time 5 -locker "~/.config/i3/blur_lock" &
 
 # start network manager applet

@@ -1,5 +1,5 @@
 # full-hd
-#Xft.dpi: 96
+Xft.dpi: 96
 
 # 4k
-Xft.dpi: 163
+!Xft.dpi: 163
